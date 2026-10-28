@@ -66,5 +66,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>O kGPS-Locator precisa da localização para mostrar coordenadas e navegar até waypoints.</string>
 </dict>
 </plist>
