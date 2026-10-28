@@ -170,7 +170,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void navegarPara(Waypoint waypoint) {
-    print('Voce acionou o Navegar para ${waypoint.nome}');
+    debugPrint('Voce acionou o Navegar para ${waypoint.nome}');
 
     setState(() {
       navegandoPara = waypoint;
@@ -179,7 +179,7 @@ class _HomePageState extends State<HomePage> {
 
   void pararNavegacao() {
     if (navegandoPara != null) {
-      print('Voce parou o Navegar para ${navegandoPara!.nome}');
+      debugPrint('Voce parou o Navegar para ${navegandoPara!.nome}');
     }
 
     setState(() {
@@ -188,11 +188,11 @@ class _HomePageState extends State<HomePage> {
   }
 
   void adicionarWaypoint() {
-    print('Voce clicou no botão Add Waypoint');
+    debugPrint('Voce clicou no botão Add Waypoint');
   }
 
   void excluirWaypoint(Waypoint waypoint) {
-    print('Voce acionou o excluir Waypoint ${waypoint.nome}');
+    debugPrint('Voce acionou o excluir Waypoint ${waypoint.nome}');
 
     // O Dismissible exige que o item saia da lista apos o swipe,
     // senao o Flutter lanca uma excecao no console.
